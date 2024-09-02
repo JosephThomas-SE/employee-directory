@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee Directory</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <img src="./assets/icons/upload.png" alt="Upload Icon" class="header-icon">
+        <h6>Employee Directory</h6>
+    </header>
+
+    <!-- Navbar Section -->
+    <nav class="navbar">
+        <div class="button-group">
+            <div class="input-group">
+                <img src="./assets/icons/search.png" alt="Search Icon" class="input-icon">
+                <input type="text" id="search" placeholder="Name / ID / Designation">
+            </div>
+            <div class="input-group">
+                <img src="./assets/icons/location.png" alt="Location Icon" class="input-icon">
+                <select id="location-filter">
+                    <!-- Options dynamically added by JavaScript -->
+                </select>
+            </div>
+            <div class="input-group">
+                <img src="./assets/icons/profile.png" alt="Department Icon" class="input-icon">
+                <select id="department-filter">
+                    <option value="">All Departments</option>
+                    <!-- Options dynamically added by JavaScript -->
+                </select>
+            </div>
+            
+            <!-- Combine more filters and clear filters in a container -->
+            <button class="filter-btn" id="AllFilters" onclick="moreFilters()">
+                <img src="./assets/icons/More_Filter.png" alt="More Filters Icon" class="button-icon">
+            </button>
+            <button class="clear-btn" id="clearAllFilters" onclick="clearFilters()">Clear</button>
+        </div>
+    </nav>
+
+
+    
+    <!-- Employee Cards Grid -->
+    <div class="employee-grid" id="employeeGrid">
+        <!-- Employee cards will be dynamically inserted here -->
+    </div>
+
+
+    <!-- Modal -->
+    <!-- Employee Details Modal -->
+    <div class="modal" id="employeeModal">
+        <div class="modal-content">
+            <span class="close" id="employeeModalClose" onclick="closeModal()">&times;</span>
+            
+            <!-- First Div: Header with Image and Info -->
+            <div class="modal-header">
+                <div class="header-content">
+                    <div class="image-section">
+                        <img src="" alt="Employee Photo" id="employeePhoto" class="employee-photo">
+                    </div>
+                    <div class="info-section">
+                        <h2 id="employeeName"></h2>
+                        <p>Designation: <span id="employeeDesignation"></span></p>
+
+                        <!-- Star rating container -->
+                        <div class="rating-container">
+                            <div class="star-rating" id="employeeStarRating">
+                                <!-- Stars will be added dynamically by JavaScript -->
+                            </div>
+                            <span id="employeeRatingNumber"></span>
+                        </div>
+                        <p>Address: <span id="employeeLocation"></span></p>
+                        <p>Total Experience: <span id="totalExperience"></span></p>
+                        <p>In House Experience: <span id="inHouseExperience"></span></p>
+                        <p>Department: <span id="employeeDepartment"></span></p>
+                        <p>Reporting Manager: <span id="reportingManager"></span></p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Second Div: Leave Details -->
+            <div class="modal-body">
+                <div class="body-content">
+                    <div class="left-side">
+                        <div class="leave-details">
+                            <!-- Days Present Section -->
+                            <div class="leave-section">
+                                <h3>Days Present</h3>
+                                <div class="leave-item">
+                                    <p id="employeeDaysPresent"></p>
+                                </div>
+                            </div>
+
+                            <!-- Casual Leave Section -->
+                            <div class="leave-section">
+                                <h3>Casual Leaves</h3>
+                                <div class="leave-item">
+                                    <div class="progress-bar-container">
+                                        <div class="progress-bar" id="casualLeaveAvailableProgressBar"></div>
+                                        <span class="leave-count" id="casualLeaveAvailableCount"></span>
+                                    </div>
+                                    <div class="progress-bar-container">
+                                        <div class="progress-bar taken" id="casualLeaveTakenProgressBar"></div>
+                                        <span class="leave-count" id="casualLeaveTakenCount"></span>
+                                    </div>
+                                    <p id="casualLeaveInfo"></p>
+                                </div>
+                            </div>
+
+                            <!-- Sick Leave Section -->
+                            <div class="leave-section">
+                                <h3>Sick Leaves</h3>
+                                <div class="leave-item">
+                                    <div class="progress-bar-container">
+                                        <div class="progress-bar" id="sickLeaveAvailableProgressBar"></div>
+                                        <span class="leave-count" id="sickLeaveAvailableCount"></span>
+                                    </div>
+                                    <div class="progress-bar-container">
+                                        <div class="progress-bar taken" id="sickLeaveTakenProgressBar"></div>
+                                        <span class="leave-count" id="sickLeaveTakenCount"></span>
+                                    </div>
+                                    <p id="sickLeaveInfo"></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Right Side Content -->
+                    <div class="right-side">
+                        <!-- Leave Application Details -->
+                        <div class="leave-applications">
+                            <h3>Leave Applications</h3>
+                            <div class="leave-applications-container">
+                                <table class="leave-applications-table">
+                                    <thead>
+                                    <tr>
+                                        <th>Date</th>
+                                        <th>Leave Type</th>
+                                        <th>Count</th>
+                                        <th>Status</th>
+                                    </tr>
+                                    </thead>
+                                    <tbody id="leaveApplicationsTableBody">
+                                    <!-- Rows will be dynamically generated by JavaScript -->
+                                    </tbody>
+                                </table>
+                            </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Third Div: Notes, Probation, Salary Details -->
+            <div class="notes-footer">
+                <div class="notes-content">
+                    <div class="left-side">
+                        <!-- Notes Section -->
+                        <div class="salary-section">
+                            <h3>Notes</h3>
+                            <div class="notes-section">
+                                <!-- Container for all notes -->
+                                <div id="notesList"></div>
+                                <!-- Button to add a new note -->
+                                <button class="add-note" id="addNewNote" onclick="addNewNote()">
+                                    <img src="./assets/icons/add.png" alt="More Filters Icon" class="note-button-icon">
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Right Side Content -->
+                    <div class="right-side">
+                        <!-- Probation Section -->
+                        <div class="salary-section">
+                            <h3>Probation</h3>
+                            <div class="probation-section">
+                                <div class="progress-bar-container">
+                                    <div class="progress-bar" id="probationProgressBar"></div>
+                                </div>
+                                <p id="probationPercentage"></p>
+                            </div>
+                        </div>
+
+                        <!-- Salary Details -->
+                        <div class="salary-section">
+                            <h3>Salary</h3>
+                            <div class="salary-details">
+                                <div class="salary-item">
+                                    <h3>Accounting Accessible</h3>
+                                    <p id="salaryAccessible"></p>
+                                </div>
+                                <div class="salary-item">
+                                    <h3>Accounting Payable</h3>
+                                    <p id="salaryPayable"></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Footer -->
+            <div class="modal-footer">
+                <p>Footer Content Here</p>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Import Data.js as a module -->
+    <script type="module" src="employeeListData.js"></script>
+    <!-- Import fullData.js as a module -->
+    <script type="module" src="fullData.js"></script>
+    <!-- Import script.js as a module -->
+    <script type="module" src="scripts.js"></script>
+</body>
+</html>

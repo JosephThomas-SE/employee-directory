@@ -1,0 +1,49 @@
+{
+  "Files": [
+    {
+      "Id": "D:\\Techneurons\\EmployeeDirectoryApi\\wwwroot\\techneurons\\assets\\icons\\app.png",
+      "PackagePath": "staticwebassets\\techneurons\\assets\\icons\\app.png"
+    },
+    {
+      "Id": "D:\\Techneurons\\EmployeeDirectoryApi\\wwwroot\\techneurons\\assets\\icons\\location.png",
+      "PackagePath": "staticwebassets\\techneurons\\assets\\icons\\location.png"
+    },
+    {
+      "Id": "D:\\Techneurons\\EmployeeDirectoryApi\\wwwroot\\techneurons\\assets\\icons\\profile.png",
+      "PackagePath": "staticwebassets\\techneurons\\assets\\icons\\profile.png"
+    },
+    {
+      "Id": "D:\\Techneurons\\EmployeeDirectoryApi\\wwwroot\\techneurons\\assets\\icons\\upload.png",
+      "PackagePath": "staticwebassets\\techneurons\\assets\\icons\\upload.png"
+    },
+    {
+      "Id": "D:\\Techneurons\\EmployeeDirectoryApi\\wwwroot\\techneurons\\index.html",
+      "PackagePath": "staticwebassets\\techneurons\\index.html"
+    },
+    {
+      "Id": "D:\\Techneurons\\EmployeeDirectoryApi\\wwwroot\\techneurons\\scripts.js",
+      "PackagePath": "staticwebassets\\techneurons\\scripts.js"
+    },
+    {
+      "Id": "D:\\Techneurons\\EmployeeDirectoryApi\\wwwroot\\techneurons\\styles.css",
+      "PackagePath": "staticwebassets\\techneurons\\styles.css"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.EmployeeDirectoryApi.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.build.EmployeeDirectoryApi.props",
+      "PackagePath": "build\\EmployeeDirectoryApi.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildMultiTargeting.EmployeeDirectoryApi.props",
+      "PackagePath": "buildMultiTargeting\\EmployeeDirectoryApi.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildTransitive.EmployeeDirectoryApi.props",
+      "PackagePath": "buildTransitive\\EmployeeDirectoryApi.props"
+    }
+  ],
+  "ElementsToRemove": []
+}
