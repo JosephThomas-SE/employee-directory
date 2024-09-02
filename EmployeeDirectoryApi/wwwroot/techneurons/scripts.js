@@ -1,42 +1,48 @@
 
-import Data from './employeeListData.js'; // Import sample data
-import FullData from './fullData.js';
+//import Data from './employeeListData.js'; // Import sample data
+//import FullData from './fullData.js';
 
 document.addEventListener('DOMContentLoaded', () => {
 
     document.getElementById('clearAllFilters').addEventListener('click', clearFilters);
 
-    fetchEmployees();
+    getEmployees();
 
     document.getElementById('search').addEventListener('input', filterEmployees);
     document.getElementById('location-filter').addEventListener('change', filterEmployees);
     document.getElementById('department-filter').addEventListener('change', filterEmployees);
     document.getElementById('employeeModalClose').addEventListener('click', closeModal);
     document.getElementById('addNewNote').addEventListener('click', addNewNote);
-    console.log(Data);
-    console.log(FullData);
 ;});
 
 
 let employees = [];
 
-// function fetchEmployees() {
-//     fetch('https://yourapi.com/api/employees') // Update with your ASP.NET API URL
-//         .then(response => response.json())
-//         .then(data => {
-//             employees = data;
-//             populateFilters();
-//             displayEmployees(employees);
-//         })
-//         .catch(error => console.error('Error fetching employees:', error));
-// }
+async function getEmployees() {
+    try {
+        const response = await fetch('https://localhost:7203/api/Employee', {
+            method: 'GET', // Method type
+            headers: {
+                'Content-Type': 'application/json', // Specify the content type
+            },
+        });
 
-// Use imported Data instead of fetching from API
-function fetchEmployees() {
-    employees = FullData;
-    populateFilters();
-    displayEmployees(employees);
+        if (!response.ok) {
+            throw new Error(`HTTP error! Status: ${response.status}`);
+        }
+
+        // Parse the JSON response and assign it to the employees array
+        employees = await response.json();
+        populateFilters();
+        displayEmployees(employees);
+        
+        console.log('Employees:', employees); // You can log the employees array to verify
+
+    } catch (error) {
+        console.error('Error fetching data:', error); // Handle any errors
+    }
 }
+
 
 function displayEmployees(employeeList) {
     const grid = document.getElementById('employeeGrid');

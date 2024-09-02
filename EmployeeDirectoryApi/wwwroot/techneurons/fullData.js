@@ -1,7 +1,7 @@
 const employee = [
     {
         id: 1,
-        name: "John Doe",
+        name: "Johny Doe",
         photo: "./assets/profile-img/emp1.jpg", // Path to employee's photo
         designation: "Software Engineer",
         department: "Development",
@@ -28,12 +28,14 @@ const employee = [
         },
         leaveApplications: [
             {
+                id:"1",
                 date: "2024-09-05",
                 leaveType: "Casual Leave",
                 count: 1,
                 status: "Approved"
             },
             {
+                id:"2",
                 date: "2024-09-10",
                 leaveType: "Sick Leave",
                 count: 2,
@@ -42,12 +44,14 @@ const employee = [
         ],
         notes: [
             {
+                id: "1",
                 name: "Jane Smith",
                 date: "2024-08-15",
                 time: "10:00 AM",
                 comment: "John has shown great improvement in recent projects."
             },
             {
+                id: "2",
                 name: "Eva Green",
                 date: "2024-08-20",
                 time: "02:30 PM",
@@ -64,7 +68,7 @@ const employee = [
     },
     {
         id: 2,
-        name: "John Doe",
+        name: "John Danny",
         photo: "./assets/profile-img/emp2.jpg", // Path to employee's photo
         designation: "Software Engineer",
         department: "Development",
@@ -91,12 +95,14 @@ const employee = [
         },
         leaveApplications: [
             {
+                id: "1",
                 date: "2024-09-05",
                 leaveType: "Casual Leave",
                 count: 1,
                 status: "Approved"
             },
             {
+                id: "2",
                 date: "2024-09-10",
                 leaveType: "Sick Leave",
                 count: 2,
@@ -105,12 +111,14 @@ const employee = [
         ],
         notes: [
             {
+                id: "1",
                 name: "Jane Smith",
                 date: "2024-08-15",
                 time: "10:00 AM",
                 comment: "John has shown great improvement in recent projects."
             },
             {
+                id: "2",
                 name: "Eva Green",
                 date: "2024-08-20",
                 time: "02:30 PM",
@@ -127,7 +135,7 @@ const employee = [
     },
     {
         id: 3,
-        name: "John Doe",
+        name: "Mariya Doe",
         photo: "./assets/profile-img/emp3.jpg", // Path to employee's photo
         designation: "Software Engineer",
         department: "Development",
@@ -154,12 +162,14 @@ const employee = [
         },
         leaveApplications: [
             {
+                id: "1",
                 date: "2024-09-05",
                 leaveType: "Casual Leave",
                 count: 1,
                 status: "Approved"
             },
             {
+                id: "2",
                 date: "2024-09-10",
                 leaveType: "Sick Leave",
                 count: 2,
@@ -168,12 +178,14 @@ const employee = [
         ],
         notes: [
             {
+                id: "1",
                 name: "Jane Smith",
                 date: "2024-08-15",
                 time: "10:00 AM",
                 comment: "John has shown great improvement in recent projects."
             },
             {
+                id: "2",
                 name: "Eva Green",
                 date: "2024-08-20",
                 time: "02:30 PM",
@@ -190,7 +202,7 @@ const employee = [
     },
     {
         id: 4,
-        name: "John Doe",
+        name: "John Martin",
         photo: "./assets/profile-img/emp4.jpg", // Path to employee's photo
         designation: "Software Engineer",
         department: "Development",
@@ -217,12 +229,14 @@ const employee = [
         },
         leaveApplications: [
             {
+                id: "1",
                 date: "2024-09-05",
                 leaveType: "Casual Leave",
                 count: 1,
                 status: "Approved"
             },
             {
+                id: "2",
                 date: "2024-09-10",
                 leaveType: "Sick Leave",
                 count: 2,
@@ -231,12 +245,14 @@ const employee = [
         ],
         notes: [
             {
+                id: "1",
                 name: "Jane Smith",
                 date: "2024-08-15",
                 time: "10:00 AM",
                 comment: "John has shown great improvement in recent projects."
             },
             {
+                id: "2",
                 name: "Eva Green",
                 date: "2024-08-20",
                 time: "02:30 PM",
@@ -253,7 +269,7 @@ const employee = [
     },
     {
         id: 5,
-        name: "John Doe",
+        name: "Mary Doe",
         photo: "./assets/profile-img/emp5.jpg", // Path to employee's photo
         designation: "Software Engineer",
         department: "Development",
@@ -280,12 +296,14 @@ const employee = [
         },
         leaveApplications: [
             {
+                id: "1",
                 date: "2024-09-05",
                 leaveType: "Casual Leave",
                 count: 1,
                 status: "Approved"
             },
             {
+                id: "2",
                 date: "2024-09-10",
                 leaveType: "Sick Leave",
                 count: 2,
@@ -294,12 +312,14 @@ const employee = [
         ],
         notes: [
             {
+                id: "1",
                 name: "Jane Smith",
                 date: "2024-08-15",
                 time: "10:00 AM",
                 comment: "John has shown great improvement in recent projects."
             },
             {
+                id: "2",
                 name: "Eva Green",
                 date: "2024-08-20",
                 time: "02:30 PM",
@@ -316,7 +336,7 @@ const employee = [
     },
     {
         id: 6,
-        name: "John Doe",
+        name: "Joe Sam",
         photo: "./assets/profile-img/emp6.jpg", // Path to employee's photo
         designation: "Software Engineer",
         department: "Development",
@@ -343,12 +363,14 @@ const employee = [
         },
         leaveApplications: [
             {
+                id: "1",
                 date: "2024-09-05",
                 leaveType: "Casual Leave",
                 count: 1,
                 status: "Approved"
             },
             {
+                id: "2",
                 date: "2024-09-10",
                 leaveType: "Sick Leave",
                 count: 2,
@@ -357,12 +379,14 @@ const employee = [
         ],
         notes: [
             {
+                id: "1",
                 name: "Jane Smith",
                 date: "2024-08-15",
                 time: "10:00 AM",
                 comment: "John has shown great improvement in recent projects."
             },
             {
+                id: "2",
                 name: "Eva Green",
                 date: "2024-08-20",
                 time: "02:30 PM",
@@ -379,7 +403,7 @@ const employee = [
     }
     ,{
         id: 7,
-        name: "John Doe",
+        name: "Mohan Dony",
         photo: "./assets/profile-img/emp7.jpg", // Path to employee's photo
         designation: "Software Engineer",
         department: "Development",
@@ -406,12 +430,14 @@ const employee = [
         },
         leaveApplications: [
             {
+                id: "1",
                 date: "2024-09-05",
                 leaveType: "Casual Leave",
                 count: 1,
                 status: "Approved"
             },
             {
+                id: "2",
                 date: "2024-09-10",
                 leaveType: "Sick Leave",
                 count: 2,
@@ -420,12 +446,14 @@ const employee = [
         ],
         notes: [
             {
+                id: "1",
                 name: "Jane Smith",
                 date: "2024-08-15",
                 time: "10:00 AM",
                 comment: "John has shown great improvement in recent projects."
             },
             {
+                id: "2",
                 name: "Eva Green",
                 date: "2024-08-20",
                 time: "02:30 PM",
@@ -442,7 +470,7 @@ const employee = [
     },
     {
         id: 8,
-        name: "John Doe",
+        name: "Sijo Doe",
         photo: "./assets/profile-img/emp8.jpg", // Path to employee's photo
         designation: "Software Engineer",
         department: "Development",
@@ -469,26 +497,37 @@ const employee = [
         },
         leaveApplications: [
             {
+                id: "1",
                 date: "2024-09-05",
                 leaveType: "Casual Leave",
                 count: 1,
                 status: "Approved"
             },
             {
+                id: "2",
                 date: "2024-09-10",
                 leaveType: "Sick Leave",
                 count: 2,
                 status: "Pending"
             }
+            {
+                id: "3",
+                date: "2024-09-05",
+                leaveType: "Sick Leave",
+                count: 1,
+                status: "Approved"
+            }
         ],
         notes: [
             {
+                id: "1",
                 name: "Jane Smith",
                 date: "2024-08-15",
                 time: "10:00 AM",
                 comment: "John has shown great improvement in recent projects."
             },
             {
+                id: "2",
                 name: "Eva Green",
                 date: "2024-08-20",
                 time: "02:30 PM",
@@ -505,7 +544,7 @@ const employee = [
     },
     {
         id: 9,
-        name: "John Doe",
+        name: "Das Doe",
         photo: "./assets/profile-img/emp9.jpg", // Path to employee's photo
         designation: "Software Engineer",
         department: "Management",
@@ -532,12 +571,21 @@ const employee = [
         },
         leaveApplications: [
             {
+                id: "1",
                 date: "2024-09-05",
                 leaveType: "Casual Leave",
                 count: 1,
                 status: "Approved"
             },
             {
+                id: "2",
+                date: "2024-09-10",
+                leaveType: "Sick Leave",
+                count: 2,
+                status: "Pending"
+            },
+            {
+                id: "3",
                 date: "2024-09-10",
                 leaveType: "Sick Leave",
                 count: 2,
@@ -546,16 +594,32 @@ const employee = [
         ],
         notes: [
             {
+                id: "1",
                 name: "Jane Smith",
                 date: "2024-08-15",
                 time: "10:00 AM",
-                comment: "John has shown great improvement in recent projects."
+                comment: "comment 1."
             },
             {
+                id: "2",
                 name: "Eva Green",
                 date: "2024-08-20",
                 time: "02:30 PM",
-                comment: "Needs to work on communication skills with the team."
+                comment: "comment 2."
+            },
+            {
+                id: "3",
+                name: "Jane Smith",
+                date: "2024-08-15",
+                time: "10:00 AM",
+                comment: "comment 3"
+            },
+            {
+                id: "4",
+                name: "Eva Green",
+                date: "2024-08-20",
+                time: "02:30 PM",
+                comment: "comment 4"
             }
         ],
         probation: {
@@ -568,7 +632,7 @@ const employee = [
     },
     {
         id: 10,
-        name: "John Doe",
+        name: "John Marykutty",
         photo: "./assets/profile-img/emp10.jpg", // Path to employee's photo
         designation: "Software Engineer",
         department: "Development",
@@ -595,12 +659,14 @@ const employee = [
         },
         leaveApplications: [
             {
+                id: "1",
                 date: "2024-09-05",
                 leaveType: "Casual Leave",
                 count: 1,
                 status: "Approved"
             },
             {
+                id: "2",
                 date: "2024-09-10",
                 leaveType: "Sick Leave",
                 count: 2,
@@ -609,12 +675,14 @@ const employee = [
         ],
         notes: [
             {
+                id: "1",
                 name: "Jane Smith",
                 date: "2024-08-15",
                 time: "10:00 AM",
                 comment: "John has shown great improvement in recent projects."
             },
             {
+                id: "2",
                 name: "Eva Green",
                 date: "2024-08-20",
                 time: "02:30 PM",
@@ -631,7 +699,7 @@ const employee = [
     },
     {
         id: 11,
-        name: "John Doe",
+        name: "Dilshad Doe",
         photo: "./assets/profile-img/emp11.jpg", // Path to employee's photo
         designation: "Software Engineer",
         department: "Quality Assurance",
@@ -658,12 +726,14 @@ const employee = [
         },
         leaveApplications: [
             {
+                id: "1",
                 date: "2024-09-05",
                 leaveType: "Casual Leave",
                 count: 1,
                 status: "Approved"
             },
             {
+                id: "2",
                 date: "2024-09-10",
                 leaveType: "Sick Leave",
                 count: 2,
@@ -672,12 +742,14 @@ const employee = [
         ],
         notes: [
             {
+                id: "1",
                 name: "Jane Smith",
                 date: "2024-08-15",
                 time: "10:00 AM",
                 comment: "John has shown great improvement in recent projects."
             },
             {
+                id: "2",
                 name: "Eva Green",
                 date: "2024-08-20",
                 time: "02:30 PM",
@@ -694,7 +766,7 @@ const employee = [
     },
     {
         id: 12,
-        name: "John Doe",
+        name: "Seban Doe",
         photo: "./assets/profile-img/emp12.jpg", // Path to employee's photo
         designation: "Software Engineer",
         department: "Management",
@@ -721,12 +793,14 @@ const employee = [
         },
         leaveApplications: [
             {
+                id: "1",
                 date: "2024-09-05",
                 leaveType: "Casual Leave",
                 count: 1,
                 status: "Approved"
             },
             {
+                id: "2",
                 date: "2024-09-10",
                 leaveType: "Sick Leave",
                 count: 2,
@@ -735,12 +809,14 @@ const employee = [
         ],
         notes: [
             {
+                id: "1",
                 name: "Jane Smith",
                 date: "2024-08-15",
                 time: "10:00 AM",
                 comment: "John has shown great improvement in recent projects."
             },
             {
+                id: "2",
                 name: "Eva Green",
                 date: "2024-08-20",
                 time: "02:30 PM",

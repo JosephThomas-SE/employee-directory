@@ -7,6 +7,13 @@ var builder = WebApplication.CreateBuilder(args);
 // Add services to the container.
 builder.Services.AddControllers(); // For API controllers
 
+// Configure CORS to allow requests from your static file's origin
+builder.Services.AddCors(options =>
+{
+    options.AddPolicy("AllowAllOrigins",
+        builder => builder.AllowAnyOrigin().AllowAnyMethod().AllowAnyHeader());
+});
+
 // Add the DbContext to the services and configure it to use SQL Server
 builder.Services.AddDbContext<ApplicationDbContext>(options =>
     options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
@@ -20,8 +27,12 @@ builder.Services.AddSwaggerGen(c =>
 
 var app = builder.Build();
 
+// Use the CORS policy
+app.UseCors("AllowAllOrigins");
+
 // Serve static files from wwwroot
 app.UseStaticFiles();
+
 // Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())
 {

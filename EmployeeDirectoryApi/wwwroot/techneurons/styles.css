@@ -472,14 +472,6 @@ select option:checked {
     text-align: left;
 }
 
-/* Scrollable Table Container */
-.leave-applications .leave-applications-container {
-    max-height: 300px; /* Adjust height as needed */
-    overflow-y: auto; /* Adds vertical scrollbar if content exceeds max-height */
-    border: 1px solid #a2a2a2; /* Border around the container */
-    border-radius: 5px; /* Rounded corners for the container */
-}
-
 
 
 /* Notes Styles */

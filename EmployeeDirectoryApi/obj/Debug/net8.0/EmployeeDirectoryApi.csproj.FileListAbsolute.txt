@@ -238,6 +238,7 @@ D:\Techneurons\EmployeeDirectoryApi\obj\Debug\net8.0\EmployeeDirectoryApi.Assemb
 D:\Techneurons\EmployeeDirectoryApi\obj\Debug\net8.0\EmployeeDirectoryApi.csproj.CoreCompileInputs.cache
 D:\Techneurons\EmployeeDirectoryApi\obj\Debug\net8.0\EmployeeDirectoryApi.MvcApplicationPartsAssemblyInfo.cs
 D:\Techneurons\EmployeeDirectoryApi\obj\Debug\net8.0\EmployeeDirectoryApi.MvcApplicationPartsAssemblyInfo.cache
+D:\Techneurons\EmployeeDirectoryApi\obj\Debug\net8.0\EmployeeDirectoryApi.sourcelink.json
 D:\Techneurons\EmployeeDirectoryApi\obj\Debug\net8.0\staticwebassets.build.json
 D:\Techneurons\EmployeeDirectoryApi\obj\Debug\net8.0\staticwebassets.development.json
 D:\Techneurons\EmployeeDirectoryApi\obj\Debug\net8.0\staticwebassets\msbuild.EmployeeDirectoryApi.Microsoft.AspNetCore.StaticWebAssets.props

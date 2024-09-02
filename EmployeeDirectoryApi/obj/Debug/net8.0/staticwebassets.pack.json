@@ -1,20 +1,112 @@
 {
   "Files": [
     {
-      "Id": "D:\\Techneurons\\EmployeeDirectoryApi\\wwwroot\\techneurons\\assets\\icons\\app.png",
-      "PackagePath": "staticwebassets\\techneurons\\assets\\icons\\app.png"
+      "Id": "D:\\Techneurons\\EmployeeDirectoryApi\\wwwroot\\techneurons\\assets\\icons\\More_Filter.png",
+      "PackagePath": "staticwebassets\\techneurons\\assets\\icons\\More_Filter.png"
+    },
+    {
+      "Id": "D:\\Techneurons\\EmployeeDirectoryApi\\wwwroot\\techneurons\\assets\\icons\\add.png",
+      "PackagePath": "staticwebassets\\techneurons\\assets\\icons\\add.png"
+    },
+    {
+      "Id": "D:\\Techneurons\\EmployeeDirectoryApi\\wwwroot\\techneurons\\assets\\icons\\approved.png",
+      "PackagePath": "staticwebassets\\techneurons\\assets\\icons\\approved.png"
     },
     {
       "Id": "D:\\Techneurons\\EmployeeDirectoryApi\\wwwroot\\techneurons\\assets\\icons\\location.png",
       "PackagePath": "staticwebassets\\techneurons\\assets\\icons\\location.png"
     },
     {
+      "Id": "D:\\Techneurons\\EmployeeDirectoryApi\\wwwroot\\techneurons\\assets\\icons\\pending.png",
+      "PackagePath": "staticwebassets\\techneurons\\assets\\icons\\pending.png"
+    },
+    {
       "Id": "D:\\Techneurons\\EmployeeDirectoryApi\\wwwroot\\techneurons\\assets\\icons\\profile.png",
       "PackagePath": "staticwebassets\\techneurons\\assets\\icons\\profile.png"
     },
     {
+      "Id": "D:\\Techneurons\\EmployeeDirectoryApi\\wwwroot\\techneurons\\assets\\icons\\search.png",
+      "PackagePath": "staticwebassets\\techneurons\\assets\\icons\\search.png"
+    },
+    {
+      "Id": "D:\\Techneurons\\EmployeeDirectoryApi\\wwwroot\\techneurons\\assets\\icons\\unlock.png",
+      "PackagePath": "staticwebassets\\techneurons\\assets\\icons\\unlock.png"
+    },
+    {
       "Id": "D:\\Techneurons\\EmployeeDirectoryApi\\wwwroot\\techneurons\\assets\\icons\\upload.png",
       "PackagePath": "staticwebassets\\techneurons\\assets\\icons\\upload.png"
+    },
+    {
+      "Id": "D:\\Techneurons\\EmployeeDirectoryApi\\wwwroot\\techneurons\\assets\\icons\\view.png",
+      "PackagePath": "staticwebassets\\techneurons\\assets\\icons\\view.png"
+    },
+    {
+      "Id": "D:\\Techneurons\\EmployeeDirectoryApi\\wwwroot\\techneurons\\assets\\profile-img\\emp1.jpg",
+      "PackagePath": "staticwebassets\\techneurons\\assets\\profile-img\\emp1.jpg"
+    },
+    {
+      "Id": "D:\\Techneurons\\EmployeeDirectoryApi\\wwwroot\\techneurons\\assets\\profile-img\\emp10.jpg",
+      "PackagePath": "staticwebassets\\techneurons\\assets\\profile-img\\emp10.jpg"
+    },
+    {
+      "Id": "D:\\Techneurons\\EmployeeDirectoryApi\\wwwroot\\techneurons\\assets\\profile-img\\emp11.jpg",
+      "PackagePath": "staticwebassets\\techneurons\\assets\\profile-img\\emp11.jpg"
+    },
+    {
+      "Id": "D:\\Techneurons\\EmployeeDirectoryApi\\wwwroot\\techneurons\\assets\\profile-img\\emp12.jpg",
+      "PackagePath": "staticwebassets\\techneurons\\assets\\profile-img\\emp12.jpg"
+    },
+    {
+      "Id": "D:\\Techneurons\\EmployeeDirectoryApi\\wwwroot\\techneurons\\assets\\profile-img\\emp13.jpg",
+      "PackagePath": "staticwebassets\\techneurons\\assets\\profile-img\\emp13.jpg"
+    },
+    {
+      "Id": "D:\\Techneurons\\EmployeeDirectoryApi\\wwwroot\\techneurons\\assets\\profile-img\\emp14.jpg",
+      "PackagePath": "staticwebassets\\techneurons\\assets\\profile-img\\emp14.jpg"
+    },
+    {
+      "Id": "D:\\Techneurons\\EmployeeDirectoryApi\\wwwroot\\techneurons\\assets\\profile-img\\emp15.jpg",
+      "PackagePath": "staticwebassets\\techneurons\\assets\\profile-img\\emp15.jpg"
+    },
+    {
+      "Id": "D:\\Techneurons\\EmployeeDirectoryApi\\wwwroot\\techneurons\\assets\\profile-img\\emp2.jpg",
+      "PackagePath": "staticwebassets\\techneurons\\assets\\profile-img\\emp2.jpg"
+    },
+    {
+      "Id": "D:\\Techneurons\\EmployeeDirectoryApi\\wwwroot\\techneurons\\assets\\profile-img\\emp3.jpg",
+      "PackagePath": "staticwebassets\\techneurons\\assets\\profile-img\\emp3.jpg"
+    },
+    {
+      "Id": "D:\\Techneurons\\EmployeeDirectoryApi\\wwwroot\\techneurons\\assets\\profile-img\\emp4.jpg",
+      "PackagePath": "staticwebassets\\techneurons\\assets\\profile-img\\emp4.jpg"
+    },
+    {
+      "Id": "D:\\Techneurons\\EmployeeDirectoryApi\\wwwroot\\techneurons\\assets\\profile-img\\emp5.jpg",
+      "PackagePath": "staticwebassets\\techneurons\\assets\\profile-img\\emp5.jpg"
+    },
+    {
+      "Id": "D:\\Techneurons\\EmployeeDirectoryApi\\wwwroot\\techneurons\\assets\\profile-img\\emp6.jpg",
+      "PackagePath": "staticwebassets\\techneurons\\assets\\profile-img\\emp6.jpg"
+    },
+    {
+      "Id": "D:\\Techneurons\\EmployeeDirectoryApi\\wwwroot\\techneurons\\assets\\profile-img\\emp7.jpg",
+      "PackagePath": "staticwebassets\\techneurons\\assets\\profile-img\\emp7.jpg"
+    },
+    {
+      "Id": "D:\\Techneurons\\EmployeeDirectoryApi\\wwwroot\\techneurons\\assets\\profile-img\\emp8.jpg",
+      "PackagePath": "staticwebassets\\techneurons\\assets\\profile-img\\emp8.jpg"
+    },
+    {
+      "Id": "D:\\Techneurons\\EmployeeDirectoryApi\\wwwroot\\techneurons\\assets\\profile-img\\emp9.jpg",
+      "PackagePath": "staticwebassets\\techneurons\\assets\\profile-img\\emp9.jpg"
+    },
+    {
+      "Id": "D:\\Techneurons\\EmployeeDirectoryApi\\wwwroot\\techneurons\\employeeListData.js",
+      "PackagePath": "staticwebassets\\techneurons\\employeeListData.js"
+    },
+    {
+      "Id": "D:\\Techneurons\\EmployeeDirectoryApi\\wwwroot\\techneurons\\fullData.js",
+      "PackagePath": "staticwebassets\\techneurons\\fullData.js"
     },
     {
       "Id": "D:\\Techneurons\\EmployeeDirectoryApi\\wwwroot\\techneurons\\index.html",
