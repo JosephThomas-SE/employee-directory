@@ -509,7 +509,7 @@ const employee = [
                 leaveType: "Sick Leave",
                 count: 2,
                 status: "Pending"
-            }
+            },
             {
                 id: "3",
                 date: "2024-09-05",

@@ -20,7 +20,14 @@ namespace EmployeeDirectoryApi.Controllers
         [HttpGet]
         public async Task<ActionResult<IEnumerable<Employee>>> GetEmployees()
         {
-            var employees = await _context.Employees.ToListAsync();
+            var employees = await _context.Employees
+                .Include(e => e.Location) // Include related Location entity
+                .Include(e => e.LeaveDetails) // Include related LeaveDetail entity
+                .Include(e => e.LeaveApplications) // Include related LeaveApplications collection
+                .Include(e => e.Notes) // Include related Notes collection
+                .Include(e => e.Probation) // Include related Probation entity
+                .Include(e => e.SalaryDetails) // Include related SalaryDetail entity
+                .ToListAsync();
             return Ok(employees);
         }
 
@@ -45,14 +52,14 @@ namespace EmployeeDirectoryApi.Controllers
             _context.Employees.Add(employee);
             await _context.SaveChangesAsync();
 
-            return CreatedAtAction(nameof(GetEmployee), new { id = employee.id }, employee);
+            return CreatedAtAction(nameof(GetEmployee), new { id = employee.Id }, employee);
         }
 
         // PUT: api/Employees/5
         [HttpPut("{id}")]
         public async Task<IActionResult> PutEmployee(int id, Employee employee)
         {
-            if (id != employee.id)
+            if (id != employee.Id)
             {
                 return BadRequest();
             }
@@ -96,7 +103,7 @@ namespace EmployeeDirectoryApi.Controllers
 
         private bool EmployeeExists(int id)
         {
-            return _context.Employees.Any(e => e.id == id);
+            return _context.Employees.Any(e => e.Id == id);
         }
     }
 }
