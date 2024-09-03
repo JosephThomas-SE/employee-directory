@@ -1,47 +1,69 @@
+import Data from './employeeListData.js'; // Import sample data
+import FullData from './fullData.js';
 
-//import Data from './employeeListData.js'; // Import sample data
-//import FullData from './fullData.js';
+// Use a flag to check if the page is fully loaded
+let isPageLoaded = false;
 
 document.addEventListener('DOMContentLoaded', () => {
 
+    // Ensure modal is hidden initially
+    const modal = document.getElementById('employeeModal');
+    modal.style.display = 'none';
+
+    isPageLoaded = true;
+
     document.getElementById('clearAllFilters').addEventListener('click', clearFilters);
 
-    getEmployees();
+    fetchEmployees();
 
     document.getElementById('search').addEventListener('input', filterEmployees);
     document.getElementById('location-filter').addEventListener('change', filterEmployees);
     document.getElementById('department-filter').addEventListener('change', filterEmployees);
     document.getElementById('employeeModalClose').addEventListener('click', closeModal);
     document.getElementById('addNewNote').addEventListener('click', addNewNote);
+
+    console.log(Data);
+    console.log(FullData);
 ;});
 
 
 let employees = [];
 
-async function getEmployees() {
-    try {
-        const response = await fetch('https://localhost:7203/api/Employee', {
-            method: 'GET', // Method type
-            headers: {
-                'Content-Type': 'application/json', // Specify the content type
-            },
-        });
-
-        if (!response.ok) {
-            throw new Error(`HTTP error! Status: ${response.status}`);
-        }
-
-        // Parse the JSON response and assign it to the employees array
-        employees = await response.json();
-        populateFilters();
-        displayEmployees(employees);
-        
-        console.log('Employees:', employees); // You can log the employees array to verify
-
-    } catch (error) {
-        console.error('Error fetching data:', error); // Handle any errors
-    }
+function fetchEmployees() {
+    employees = FullData;
+    populateFilters();
+    displayEmployees(employees);
 }
+
+
+// function to call the backend api, 
+//as the backend api does not contain any data now, 
+//we are using the fullData.js file to set the data.
+
+// async function getEmployees() {
+//     try {
+//         const response = await fetch('https://localhost:7203/api/Employee', {
+//             method: 'GET', // Method type
+//             headers: {
+//                 'Content-Type': 'application/json', // Specify the content type
+//             },
+//         });
+
+//         if (!response.ok) {
+//             throw new Error(`HTTP error! Status: ${response.status}`);
+//         }
+
+//         // Parse the JSON response and assign it to the employees array
+//         employees = await response.json();
+//         populateFilters();
+//         displayEmployees(employees);
+        
+//         console.log('Employees:', employees); // You can log the employees array to verify
+
+//     } catch (error) {
+//         console.error('Error fetching data:', error); // Handle any errors
+//     }
+// }
 
 
 function displayEmployees(employeeList) {
@@ -69,6 +91,9 @@ function displayEmployees(employeeList) {
 }
 
 function openEmployeeModal(employee) {
+
+    console.log('Open Employee Modal called'); // Debug log
+
     // Update the employee photo
     const photoElement = document.getElementById('employeePhoto');
     photoElement.src = employee.photo; // Assuming `employee.photo` is the URL to the photo
@@ -176,7 +201,7 @@ function addNewNote() {
         comment: "This is a new note." // Replace with actual comment input
     };
 
-    const colors = ['#FFEBEE', '#E8F5E9', '#E3F2FD', '#FFF3E0', '#F3E5F5']; // Array of colors for notes
+    const colors = ['#DD5555', '#3DFF50', '#4FCDFF', '#FBFF29', '#FF29DB']; // Array of colors for notes
 
     // Append the new note to the employee's notes (adjust according to your data handling)
     const noteItem = document.createElement('div');
@@ -189,9 +214,12 @@ function addNewNote() {
 
     document.getElementById('notesList').appendChild(noteItem);
 }
-  
+
+//function to close the modal on click
 function closeModal() {
-    document.getElementById('employeeModal').style.display = 'none';
+    // Close the modal
+    const modal = document.getElementById('employeeModal');
+    modal.style.display = 'none';
 }
   
 
