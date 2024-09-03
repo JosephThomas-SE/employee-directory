@@ -55,28 +55,45 @@
     <!-- Employee Details Modal -->
     <div class="modal" id="employeeModal">
         <div class="modal-content">
+            <div class="header-top"></div> <!-- Top 15% background -->
             <span class="close" id="employeeModalClose" onclick="closeModal()">&times;</span>
             
             <!-- First Div: Header with Image and Info -->
             <div class="modal-header">
                 <div class="header-content">
-                    <div class="image-section">
-                        <img src="" alt="Employee Photo" id="employeePhoto" class="employee-photo">
-                    </div>
-                    <div class="info-section">
-                        <h2 id="employeeName"></h2>
-                        <p>Designation: <span id="employeeDesignation"></span></p>
-
-                        <!-- Star rating container -->
-                        <div class="rating-container">
-                            <div class="star-rating" id="employeeStarRating">
-                                <!-- Stars will be added dynamically by JavaScript -->
+                    <div class="header-content-top">
+                        <div class="header-content-img">
+                            <div class="image-section">
+                                <img src="" alt="Employee Photo" id="employeePhoto" class="employee-photo">
                             </div>
-                            <span id="employeeRatingNumber"></span>
                         </div>
-                        <p>Address: <span id="employeeLocation"></span></p>
-                        <p>Total Experience: <span id="totalExperience"></span></p>
-                        <p>In House Experience: <span id="inHouseExperience"></span></p>
+                        <div class="col-header">
+                            <div class="first-half-header">
+                                <div>
+                                        <h2 id="employeeName"></h2>
+                                        <p><span id="employeeDesignation"></span></p>
+                
+                                        <!-- Star rating container -->
+                                    <div class="rating-container">
+                                            <div class="star-rating" id="employeeStarRating">
+                                                <!-- Stars will be added dynamically by JavaScript -->
+                                            </div>
+                                            <span id="employeeRatingNumber"></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="second-half-header">
+                                    <div class="second-half-info-1">
+                                        <p>Address: <span id="employeeLocation"></span></p>
+                                    </div>
+                                    <div class="second-half-info-2">
+                                        <p>Total Experience: <span id="totalExperience"></span></p>
+                                        <p>In House Experience: <span id="inHouseExperience"></span></p>
+                                    </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="team-info">
                         <p>Department: <span id="employeeDepartment"></span></p>
                         <p>Reporting Manager: <span id="reportingManager"></span></p>
                     </div>
@@ -157,7 +174,7 @@
             <!-- Third Div: Notes, Probation, Salary Details -->
             <div class="notes-footer">
                 <div class="notes-content">
-                    <div class="left-side">
+                    <div class="notes-content-left-side">
                         <!-- Notes Section -->
                         <div class="salary-section">
                             <h3>Notes</h3>
@@ -173,7 +190,7 @@
                     </div>
 
                     <!-- Right Side Content -->
-                    <div class="right-side">
+                    <div class="notes-content-right-side">
                         <!-- Probation Section -->
                         <div class="salary-section">
                             <h3>Probation</h3>
@@ -206,6 +223,7 @@
             <!-- Footer -->
             <div class="modal-footer">
                 <p>Footer Content Here</p>
+            </div>
             </div>
         </div>
     </div>
