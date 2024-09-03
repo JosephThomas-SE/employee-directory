@@ -77,7 +77,7 @@
                                     <div class="rating-container">
                                             <div class="star-rating" id="employeeStarRating">
                                                 <!-- Stars will be added dynamically by JavaScript -->
-                                            </div>
+                                            </div>|
                                             <span id="employeeRatingNumber"></span>
                                     </div>
                                 </div>
@@ -87,8 +87,8 @@
                                         <p>Address: <span id="employeeLocation"></span></p>
                                     </div>
                                     <div class="second-half-info-2">
-                                        <p>Total Experience: <span id="totalExperience"></span></p>
-                                        <p>In House Experience: <span id="inHouseExperience"></span></p>
+                                        <p>Total Experience: <span id="totalExperience">Years</span></p>
+                                        <p>In House Experience: <span id="inHouseExperience">Years</span></p>
                                     </div>
                             </div>
                         </div>
@@ -103,7 +103,7 @@
             <!-- Second Div: Leave Details -->
             <div class="modal-body">
                 <div class="body-content">
-                    <div class="left-side">
+                    <div class="body-content-left-side">
                         <div class="leave-details">
                             <!-- Days Present Section -->
                             <div class="leave-section">
@@ -118,14 +118,14 @@
                                 <h3>Casual Leaves</h3>
                                 <div class="leave-item">
                                     <div class="progress-bar-container">
-                                        <div class="progress-bar" id="casualLeaveAvailableProgressBar"></div>
-                                        <span class="leave-count" id="casualLeaveAvailableCount"></span>
+                                        <div class="casual-progress-bar-available" id="casualLeaveAvailableProgressBar"></div>
+                                        <span class="casual-leave-count-available" id="casualLeaveAvailableCount"></span>
                                     </div>
                                     <div class="progress-bar-container">
-                                        <div class="progress-bar taken" id="casualLeaveTakenProgressBar"></div>
-                                        <span class="leave-count" id="casualLeaveTakenCount"></span>
+                                        <div class="casual-progress-bar-taken" id="casualLeaveTakenProgressBar"></div>
+                                        <span class="casual-leave-count-taken" id="casualLeaveTakenCount"></span>
                                     </div>
-                                    <p id="casualLeaveInfo"></p>
+                                    <div class="casual-progress-bar-info" id="casualLeaveInfo"></div> <!-- Updated -->
                                 </div>
                             </div>
 
@@ -134,21 +134,21 @@
                                 <h3>Sick Leaves</h3>
                                 <div class="leave-item">
                                     <div class="progress-bar-container">
-                                        <div class="progress-bar" id="sickLeaveAvailableProgressBar"></div>
-                                        <span class="leave-count" id="sickLeaveAvailableCount"></span>
+                                        <div class="sick-progress-bar-available" id="sickLeaveAvailableProgressBar"></div>
+                                        <span class="sick-leave-count-available" id="sickLeaveAvailableCount"></span>
                                     </div>
                                     <div class="progress-bar-container">
-                                        <div class="progress-bar taken" id="sickLeaveTakenProgressBar"></div>
-                                        <span class="leave-count" id="sickLeaveTakenCount"></span>
+                                        <div class="sick-progress-bar-taken" id="sickLeaveTakenProgressBar"></div>
+                                        <span class="sick-leave-count-taken" id="sickLeaveTakenCount"></span>
                                     </div>
-                                    <p id="sickLeaveInfo"></p>
+                                    <div class="sick-progress-bar-info" id="sickLeaveInfo"></div> <!-- Updated -->
                                 </div>
                             </div>
                         </div>
                     </div>
 
                     <!-- Right Side Content -->
-                    <div class="right-side">
+                    <div class="body-content-right-side">
                         <!-- Leave Application Details -->
                         <div class="leave-applications">
                             <h3>Leave Applications</h3>

@@ -101,25 +101,45 @@ function openEmployeeModal(employee) {
     // Update employee basic information
     document.getElementById('employeeName').textContent = employee.name;
     document.getElementById('employeeDesignation').textContent = employee.designation;
-    document.getElementById('employeeLocation').textContent = employee.location;
-    document.getElementById('totalExperience').textContent = employee.city; // Adjusted
-    document.getElementById('inHouseExperience').textContent = employee.country; // Adjusted
-    document.getElementById('employeeDepartment').textContent = employee.department;
+    document.getElementById('employeeLocation').textContent = employee.location.address;
+    document.getElementById('totalExperience').textContent = employee.totalExperience; // Adjusted
+    document.getElementById('inHouseExperience').textContent = employee.inHouseExperience; // Adjusted
+    document.getElementById('employeeDepartment').textContent = employee.team;
     document.getElementById('reportingManager').textContent = employee.reportingManager;
 
     // Update rating
     const ratingElement = document.getElementById('employeeStarRating');
     ratingElement.innerHTML = ''; // Clear any existing stars
+
+    const fullStar = '★';
+    const halfStar = '\u2BE8'; // Unicode character for a half-filled star (or you can use an image/svg)
+    const emptyStar = '☆';
+
+    const rating = employee.rating; // Example ratings: 4.3, 2.5, 3.8
+
     for (let i = 0; i < 5; i++) {
         const star = document.createElement('span');
         star.className = 'star';
-        if (i < employee.rating) {
+
+        if (i < Math.floor(rating)) {
+            // Full stars for whole numbers less than the rating
+            star.textContent = fullStar;
             star.classList.add('filled');
+        } else if (i < Math.ceil(rating) && rating % 1 !== 0) {
+            // Half star if the current position is less than the ceiling of the rating and the rating is fractional
+            star.textContent = halfStar;
+            star.classList.add('half-filled');
+        } else {
+            // Empty star for all others
+            star.textContent = emptyStar;
+            star.classList.add('empty');
         }
-        star.textContent = '★';
+
         ratingElement.appendChild(star);
     }
-    document.getElementById('employeeRatingNumber').textContent = employee.rating;
+
+    document.getElementById('employeeRatingNumber').textContent = rating.toFixed(1); // Display rating to one decimal place
+
 
     const colors = ['#FFEBEE', '#E8F5E9', '#E3F2FD', '#FFF3E0', '#F3E5F5']; // Array of colors for notes
 
@@ -133,18 +153,20 @@ function openEmployeeModal(employee) {
     const sickLeaveTaken = employee.leaveDetails.sickLeave.taken;
 
     // Update Casual Leave Progress Bars
-    document.getElementById('casualLeaveAvailableProgressBar').style.width = (casualLeaveAvailable * 10) + '%';
-    document.getElementById('casualLeaveTakenProgressBar').style.width = (casualLeaveTaken * 10) + '%';
-    document.getElementById('casualLeaveInfo').textContent = `Available: ${casualLeaveAvailable}, Taken: ${casualLeaveTaken}`;
-    document.getElementById('casualLeaveAvailableCount').textContent = `${casualLeaveAvailable}`;
-    document.getElementById('casualLeaveTakenCount').textContent = `${casualLeaveTaken}`;
-
-    // Update Sick Leave Progress Bars
-    document.getElementById('sickLeaveAvailableProgressBar').style.width = (sickLeaveAvailable * 10) + '%';
-    document.getElementById('sickLeaveTakenProgressBar').style.width = (sickLeaveTaken * 10) + '%';
-    document.getElementById('sickLeaveInfo').textContent = `Available: ${sickLeaveAvailable}, Taken: ${sickLeaveTaken}`;
-    document.getElementById('sickLeaveAvailableCount').textContent = `${sickLeaveAvailable}`;
-    document.getElementById('sickLeaveTakenCount').textContent = `${sickLeaveTaken}`;
+     document.getElementById('casualLeaveInfo').innerHTML = `
+         <div style="color: #4caf50;" class="progress-bar" style="width: ${casualLeaveAvailable * 10}%">${casualLeaveAvailable}</div>
+         <div style="color: #f44336;" class="progress-bar" style="width: ${casualLeaveTaken * 10}%">${casualLeaveTaken}</div>
+         <span style="color: #4caf50;">Available: ${casualLeaveAvailable}</span>
+         <span style="color: #f44336;">Taken: ${casualLeaveTaken}</span>
+     `;
+ 
+     // Update Sick Leave Progress Bars
+     document.getElementById('sickLeaveInfo').innerHTML = `
+         <div style="color: #f56f08;" class="progress-bar" style="width: ${sickLeaveAvailable * 10}%">${sickLeaveAvailable}</div>
+         <div style="color: #d000ff;" class="progress-bar" style="width: ${sickLeaveTaken * 10}%">${sickLeaveTaken}</div>
+         <span style="color: #f56f08;">Available: ${sickLeaveAvailable}</span>
+         <span style="color: #d000ff;">Taken: ${sickLeaveTaken}</span>
+     `;
 
     // notes section
     const notesList = document.getElementById('notesList');

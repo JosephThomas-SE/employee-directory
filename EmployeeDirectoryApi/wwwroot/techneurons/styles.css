@@ -288,7 +288,7 @@ select option:checked {
     flex-direction: column;
     justify-content: flex-start; /* Align content to the start (left) */
     align-items: center;
-    width: 90%;
+    width: 98%;
     height: 150px; /* Adjust height as needed */
     position: relative;
     padding: 0; /* Remove padding */
@@ -297,10 +297,12 @@ select option:checked {
   
   /* Header Background Top */
   .header-top {
-    background-color: #888; /* Top 15% background color */
+    background-color: #cdcdcd; /* Top 15% background color */
     width: 100%;
-    height: 17%; /* 15% of the total header height */
+    height: 16%; /* 15% of the total header height */
     position: absolute;
+    border-top-left-radius: 8px;  /* Sets the top-left corner radius */
+    border-top-right-radius: 8px; /* Sets the top-right corner radius */
     top: 0;
     left: 0;
   }
@@ -347,7 +349,7 @@ select option:checked {
 .header-content {
     display: flex;
     flex-direction: column; /* Keeps all content stacked vertically */
-    width: 100%;
+    width: 90%;
     height: 100%;
     box-sizing: border-box;
 }
@@ -359,7 +361,6 @@ select option:checked {
     align-items: center;
     width: 100%;
     height: 100%;
-    margin-top: 25px;
 }
 
 /* Image Section: Positioned on the left */
@@ -367,33 +368,39 @@ select option:checked {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 120px; /* Set width for image section */
+    width: 150px; /* Set width for image section */
     flex-shrink: 0; /* Prevent the image section from shrinking */
 }
 
 .image-section {
-    width: 100px; /* Adjust size as needed */
-    height: 100px; /* Adjust size as needed */
+    width: 110px; /* Adjust size as needed */
+    height: 110px; /* Adjust size as needed */
     border-radius: 50%;
     overflow: hidden;
     display: flex;
     align-items: center;
     justify-content: center;
+    border: 1px solid #8fcafe; /* Outer circle border */
+    border-radius: 50%; /* Make the wrapper a circle */
+    background-color: #f9f9f9; /* Match card background */
+    transition: background-color 0.2s, border-color 0.2s; /* Smooth transition on hover */
+    margin-right: 10px; /* Space between photo and text */
 }
 
 .employee-photo {
-    width: 100%;
-    height: 100%;
+    width: 90%;
+    height: 90%;
     border-radius: 50%;
+    object-fit: cover; /* Crop the image to fit within the circle */
+    transition: border 0.2s; /* Smooth transition for hover effect */
 }
 
 /* Column Header: Flex container for the two header sections */
 .col-header {
     display: flex;
     flex-direction: column; /* Stack the headers vertically */
-    margin-left: 20px; /* Space between image and text */
+    margin-left: 10px; /* Space between image and text */
     height: 100%; /* Ensures it takes up full height of parent container */
-    justify-content: space-between; /* Space out the headers top and bottom */
 }
 
 /* First Half Header: Stack content vertically */
@@ -401,48 +408,117 @@ select option:checked {
     display: flex;
     flex-direction: column; /* Stack items vertically */
     justify-content: flex-start; /* Align content to the top */
-    margin-top: 15px;
 }
 
 .first-half-header h2{
-    font-size: 20px;
+    padding-top: 5px;
+    font-size: 24px;
     color: black;
 }
+
+.first-half-header p{
+    font-size: 12px;
+}
+
 /* Second Half Header: Stack content vertically */
 .second-half-header {
     display: flex;
     flex-direction: column; /* Stack items vertically */
     justify-content: flex-start; /* Align content to the top */
-    margin-top: auto; /* Push second half to the bottom */
 }
 
-/* Individual info sections */
+/* Individual info sections //Address */
 .second-half-info-1 {
-    margin-bottom: 5px; /* Separate lines with spacing */
+    font-size: 12px;
+    margin-bottom: 8px; /* Separate lines with spacing */
 }
 
-/* Align items within second-half-info-2 on the same line */
+/* Color for Address p tag*/
+.second-half-info-1 p{
+    color: #1512c4;
+}
+
+/* Color for Address p tag*/
+.second-half-info-1 span{
+    color: #000000;
+}
+
+/* Align items within second-half-info-2 on the same line //Experience */
 .second-half-info-2 {
     display: flex; /* Align children on the same line */
-    gap: 40px; /* Add some space between items */
+    gap: 10px; /* Add some space between items */
+    font-size: 12px;
+}
+
+/* Color for Experience p tag*/
+.second-half-info-2 p{
+    color: #1512c4;
+}
+.second-half-info-2 span{
+    flex: 1;
+    color: #000000;
 }
 
 /* Team Info: Align items on the same line */
 .team-info {
     display: flex;
+    font-size: 12px;
+    font-weight: bold;
     margin-top: 12px;
-    padding-left: 110px;
-    gap: 50px;
+    padding-left: 68px;
+    gap: 30px;
 }
 
+/* Team Info: Align items on the same line */
+.team-info #employeeDepartment,
+.team-info #reportingManager {
+    background-color: rgb(226, 226, 226);
+    padding: 3px;
+    width: 100%;
+    border-radius: 4px;
+}
+
+.team-info #employeeDepartment {
+    color: #4caf50;
+}
+
+.team-info #reportingManager {
+    color: #fe2626;
+}
+
+/* <------------------------------------------------------------------------------------------------------> */
 /* Rating container styling */
 .rating-container {
-    margin-bottom: 14px;
+    margin-bottom: 6px;
 }
 
 .star-rating {
     display: inline-block;
-    margin-right: 5px;
+    margin-right: 10px;
+    font-size: medium;
+}
+
+/* Base style for stars */
+.star {
+    font-size: 20px; /* Adjust as needed */
+    color: lightgray; /* Default color for unfilled stars */
+}
+
+/* Style for filled stars */
+.star.filled {
+    color: gold; /* Color for filled stars, adjust as needed */
+}
+
+/* Style for half-filled stars */
+.star.half-filled {
+    color: gold; /* Half star color, can match full stars */
+    position: relative;
+    /* Optional: styling for more complex half-star displays could go here */
+}
+
+/* Optional: Different color for unfilled stars */
+.star.unfilled {
+    color: lightgray; /* This matches the base color but could be customized */
 }
 
 /* <---------------------------------------------------------------------------------> */
@@ -451,7 +527,7 @@ select option:checked {
     display: flex;
     flex-direction: column; /* Stack content vertically */
     width: 100%;
-    margin-top: 50px;
+    margin-top: 20px;
 }
 
 /* Body Content Styles */
@@ -463,11 +539,16 @@ select option:checked {
 }
 
 /* Left and Right Side Styles */
-.left-side, .right-side {
+.body-content-left-side,
+.body-content-right-side {
     flex: 1; /* Ensures equal width for both sides */
     display: flex;
-    
 }
+.body-content-right-side { 
+    flex: 1; 
+    display: flex;
+    flex-direction: column;
+} 
 
 /* Leave Details Styles */
 .leave-details {
@@ -503,8 +584,8 @@ select option:checked {
     text-align: center;
     background-color: white;
     border: 1px solid black;
-    max-height: 80px;
-    min-height: 80px;
+    max-height: 70px;
+    min-height: 70px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -538,6 +619,38 @@ select option:checked {
     color: #333;
 }
 
+/* Specific Styles for Casual Leave */
+.casual-progress-bar-available {
+    background-color: #4caf50; /* Green for available casual leave */
+}
+
+.casual-progress-bar-taken {
+    background-color: #f44336; /* Red for taken casual leave */
+}
+
+/* Specific Styles for Sick Leave */
+.sick-progress-bar-available {
+    background-color: #f56f08; /* Blue for available sick leave */
+}
+
+.sick-progress-bar-taken {
+    background-color: #d000ff; /* Different color for taken sick leave */
+}
+
+/* Progress Bar Info Styles */
+.progress-bar-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.progress-bar-info span {
+    font-size: 12px;
+    color: #333;
+}
+
+/* <------------------------------------------------------------------------------------------------------> */
 /* Leave Applications DIV Styles */
 .leave-applications {
     background-color: rgb(247, 246, 246);
@@ -579,20 +692,27 @@ select option:checked {
     font-size: 12px;
     background-color: white;
 }
+
+
+/* <-------------------------------------------------------------------------------------------------------> */
 /* Notes Footer Styles */
 .notes-footer {
     display: flex;
-    justify-content: center; /* Center the content horizontally */
-    padding: 20px; /* Optional: add padding to the footer */
+    width: 100%;
+    margin-bottom: 20px; /* Space below body content */
 }
 
 /* Notes Content Styles */
 .notes-content {
     display: flex;
     width: 100%; /* Full width to utilize available space */
-    max-width: 1200px; /* Optional: set a maximum width */
-    justify-content: space-between; /* Distribute space between sides */
-    gap: 20px; /* Space between the left and right side */
+    gap: 15px; /* Space between left and right sides */
+}
+
+/* Left and Right Side Content Styles */
+.notes-content-left-side,
+.notes-content-right-side {
+    flex: 1; /* Allows both sides to take equal width */
 }
 
 /* Notes Section Styles */
@@ -628,6 +748,8 @@ select option:checked {
     background-color: #f8f8f8;
 }
 
+
+/* <------------------------------------------------------------------------------------------------------------------> */
 /* Probation Section Styles */
 .probation-section {
     background-color: #ffffff;
