@@ -3,12 +3,24 @@
   "WorkspaceRootPath": "D:\\Techneurons\\EmployeeDirectoryApi\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{2CC82D69-3DEF-466A-AB0F-442ED84F10F8}|EmployeeDirectoryApi.csproj|d:\\techneurons\\employeedirectoryapi\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2CC82D69-3DEF-466A-AB0F-442ED84F10F8}|EmployeeDirectoryApi.csproj|solutionrelative:data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Techneurons\\EmployeeDirectoryApi\\Migrations\\20240903062226_InitialCreate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Migrations\\20240903062226_InitialCreate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Techneurons\\EmployeeDirectoryApi\\Migrations\\20240903061909_UpdateModels.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Migrations\\20240903061909_UpdateModels.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{2CC82D69-3DEF-466A-AB0F-442ED84F10F8}|EmployeeDirectoryApi.csproj|d:\\techneurons\\employeedirectoryapi\\models\\employee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{2CC82D69-3DEF-466A-AB0F-442ED84F10F8}|EmployeeDirectoryApi.csproj|solutionrelative:models\\employee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Techneurons\\EmployeeDirectoryApi\\Migrations\\20240903060718_UpdateSchema.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Migrations\\20240903060718_UpdateSchema.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2CC82D69-3DEF-466A-AB0F-442ED84F10F8}|EmployeeDirectoryApi.csproj|d:\\techneurons\\employeedirectoryapi\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2CC82D69-3DEF-466A-AB0F-442ED84F10F8}|EmployeeDirectoryApi.csproj|solutionrelative:data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{2CC82D69-3DEF-466A-AB0F-442ED84F10F8}|EmployeeDirectoryApi.csproj|d:\\techneurons\\employeedirectoryapi\\controllers\\employeecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -22,15 +34,54 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
             },
             {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "20240903062226_InitialCreate.cs",
+              "DocumentMoniker": "D:\\Techneurons\\EmployeeDirectoryApi\\Migrations\\20240903062226_InitialCreate.cs",
+              "RelativeDocumentMoniker": "Migrations\\20240903062226_InitialCreate.cs",
+              "ToolTip": "D:\\Techneurons\\EmployeeDirectoryApi\\Migrations\\20240903062226_InitialCreate.cs",
+              "RelativeToolTip": "Migrations\\20240903062226_InitialCreate.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-03T06:22:27.27Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "20240903061909_UpdateModels.cs",
+              "DocumentMoniker": "D:\\Techneurons\\EmployeeDirectoryApi\\Migrations\\20240903061909_UpdateModels.cs",
+              "RelativeDocumentMoniker": "Migrations\\20240903061909_UpdateModels.cs",
+              "ToolTip": "D:\\Techneurons\\EmployeeDirectoryApi\\Migrations\\20240903061909_UpdateModels.cs",
+              "RelativeToolTip": "Migrations\\20240903061909_UpdateModels.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-03T06:19:10.213Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "20240903060718_UpdateSchema.cs",
+              "DocumentMoniker": "D:\\Techneurons\\EmployeeDirectoryApi\\Migrations\\20240903060718_UpdateSchema.cs",
+              "RelativeDocumentMoniker": "Migrations\\20240903060718_UpdateSchema.cs",
+              "ToolTip": "D:\\Techneurons\\EmployeeDirectoryApi\\Migrations\\20240903060718_UpdateSchema.cs",
+              "RelativeToolTip": "Migrations\\20240903060718_UpdateSchema.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-03T06:07:19.267Z",
+              "EditorCaption": ""
+            },
+            {
               "$type": "Bookmark",
-              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
+              "Name": "ST:0:0:{0ad07096-bba9-4900-a651-0598d26f6d24}"
             },
             {
               "$type": "Bookmark",
@@ -39,40 +90,40 @@
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "EmployeeController.cs",
-              "DocumentMoniker": "D:\\Techneurons\\EmployeeDirectoryApi\\Controllers\\EmployeeController.cs",
-              "RelativeDocumentMoniker": "Controllers\\EmployeeController.cs",
-              "ToolTip": "D:\\Techneurons\\EmployeeDirectoryApi\\Controllers\\EmployeeController.cs",
-              "RelativeToolTip": "Controllers\\EmployeeController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAFsAAAAuAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-02T18:42:24.128Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "ApplicationDbContext.cs",
-              "DocumentMoniker": "D:\\Techneurons\\EmployeeDirectoryApi\\Data\\ApplicationDbContext.cs",
-              "RelativeDocumentMoniker": "Data\\ApplicationDbContext.cs",
-              "ToolTip": "D:\\Techneurons\\EmployeeDirectoryApi\\Data\\ApplicationDbContext.cs",
-              "RelativeToolTip": "Data\\ApplicationDbContext.cs",
-              "ViewState": "AgIAABIAAAAAAAAAAIAzwEIAAAArAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-02T18:36:35.941Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
               "Title": "Employee.cs",
               "DocumentMoniker": "D:\\Techneurons\\EmployeeDirectoryApi\\Models\\Employee.cs",
               "RelativeDocumentMoniker": "Models\\Employee.cs",
               "ToolTip": "D:\\Techneurons\\EmployeeDirectoryApi\\Models\\Employee.cs",
               "RelativeToolTip": "Models\\Employee.cs",
-              "ViewState": "AgIAABYAAAAAAAAAAAAUwCQAAAApAAAAAAAAAA==",
+              "ViewState": "AgIAABoAAAAAAAAAAAA7wCYAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-02T15:31:57.51Z",
+              "WhenOpened": "2024-09-03T04:24:18.055Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "ApplicationDbContext.cs",
+              "DocumentMoniker": "D:\\Techneurons\\EmployeeDirectoryApi\\Data\\ApplicationDbContext.cs",
+              "RelativeDocumentMoniker": "Data\\ApplicationDbContext.cs",
+              "ToolTip": "D:\\Techneurons\\EmployeeDirectoryApi\\Data\\ApplicationDbContext.cs",
+              "RelativeToolTip": "Data\\ApplicationDbContext.cs",
+              "ViewState": "AgIAADUAAAAAAAAAAAAQwEQAAAA3AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-03T04:21:25.397Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "EmployeeController.cs",
+              "DocumentMoniker": "D:\\Techneurons\\EmployeeDirectoryApi\\Controllers\\EmployeeController.cs",
+              "RelativeDocumentMoniker": "Controllers\\EmployeeController.cs",
+              "ToolTip": "D:\\Techneurons\\EmployeeDirectoryApi\\Controllers\\EmployeeController.cs",
+              "RelativeToolTip": "Controllers\\EmployeeController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAGYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-03T04:18:12.146Z",
               "EditorCaption": ""
             }
           ]

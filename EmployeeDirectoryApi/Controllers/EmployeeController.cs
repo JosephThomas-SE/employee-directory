@@ -52,14 +52,14 @@ namespace EmployeeDirectoryApi.Controllers
             _context.Employees.Add(employee);
             await _context.SaveChangesAsync();
 
-            return CreatedAtAction(nameof(GetEmployee), new { id = employee.Id }, employee);
+            return CreatedAtAction(nameof(GetEmployee), new { id = employee.id }, employee);
         }
 
         // PUT: api/Employees/5
         [HttpPut("{id}")]
         public async Task<IActionResult> PutEmployee(int id, Employee employee)
         {
-            if (id != employee.Id)
+            if (id != employee.id)
             {
                 return BadRequest();
             }
@@ -103,7 +103,7 @@ namespace EmployeeDirectoryApi.Controllers
 
         private bool EmployeeExists(int id)
         {
-            return _context.Employees.Any(e => e.Id == id);
+            return _context.Employees.Any(e => e.id == id);
         }
     }
 }

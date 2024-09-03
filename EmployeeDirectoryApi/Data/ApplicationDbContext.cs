@@ -37,13 +37,15 @@ namespace EmployeeDirectoryApi.Data
             modelBuilder.Entity<Employee>()
                 .HasOne(e => e.Location)
                 .WithOne()
-                .HasForeignKey<Employee>(e => e.LocationId);
+                .HasForeignKey<Employee>(e => e.LocationId)
+                .HasPrincipalKey<Location>(l => l.Id);
 
             // One-to-One relationship between Employee and LeaveDetail
             modelBuilder.Entity<Employee>()
                 .HasOne(e => e.LeaveDetails)
                 .WithOne(ld => ld.Employee)
-                .HasForeignKey<LeaveDetail>(ld => ld.EmployeeId);
+                .HasForeignKey<LeaveDetail>(ld => ld.EmployeeId)
+                .HasPrincipalKey<Employee>(e => e.id);
 
             // One-to-Many relationship between Employee and LeaveApplication
             modelBuilder.Entity<Employee>()
@@ -61,13 +63,15 @@ namespace EmployeeDirectoryApi.Data
             modelBuilder.Entity<Employee>()
                 .HasOne(e => e.Probation)
                 .WithOne(p => p.Employee)
-                .HasForeignKey<Probation>(p => p.EmployeeId);
+                .HasForeignKey<Probation>(p => p.EmployeeId)
+                .HasPrincipalKey<Employee>(e => e.id);
 
             // One-to-One relationship between Employee and SalaryDetail
             modelBuilder.Entity<Employee>()
                 .HasOne(e => e.SalaryDetails)
                 .WithOne(sd => sd.Employee)
-                .HasForeignKey<SalaryDetail>(sd => sd.EmployeeId);
+                .HasForeignKey<SalaryDetail>(sd => sd.EmployeeId)
+                .HasPrincipalKey<Employee>(e => e.id);
         }
     }
 }
